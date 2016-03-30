@@ -6,6 +6,8 @@ set :fonts_dir,  'assets/fonts'
 set :layouts_dir,  'templates/layouts'
 set :partials_dir, 'templates/partials'
 
+page 'questions/*', layout: :questions
+
 compass_config do |config|
   config.output_style = :nested
   # Temporarily disabling warnings to suppress "interpolation near operators"

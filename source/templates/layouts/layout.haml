@@ -1,5 +1,5 @@
 !!! 5
-%html.no-js{ lang: 'en' }
+%html{ lang: 'en' }
   %head
     %meta{ charset: 'utf-8' }
     %meta{ name: 'viewport', content: 'width=device-width,initial-scale=1' }
@@ -8,8 +8,7 @@
     %noscript
       %style= inline_stylesheet '_noscript'
   %body{ class: page_classes }
-    %header
-      = partial (current_page.data.header || 'header')
+    = partial 'header'
     %main
       .container
         = yield
