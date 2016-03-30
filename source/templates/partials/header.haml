@@ -1,0 +1,6 @@
+.container
+  - if page_classes != 'index'
+    %nav{ role: 'navigation' }
+      = link_to 'Bacchus trivia', '/index.html'
+      →
+  %h1= current_page.data.title
