@@ -5,6 +5,7 @@ set :fonts_dir,  'assets/fonts'
 
 set :layouts_dir,  'templates/layouts'
 set :partials_dir, 'templates/partials'
+set :relative_links, true
 
 page 'questions/*', layout: :questions
 
