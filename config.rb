@@ -59,13 +59,6 @@ configure :build do
   activate :minify_javascript
   activate :asset_hash
 
-  # CloudFront environment variable is set in the Rakefile and only used by
-  # middleman-gh-pages
-  if ENV['CLOUDFRONT']
-    activate :asset_host
-    set :asset_host, '//d2w6wzut3jzr25.cloudfront.net/trivia'
-  end
-
   activate :minify_html do |html|
     html.remove_input_attributes = false
     html.remove_intertag_spaces = false
